@@ -3,23 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CV</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="container">
-      <div id="top" onclick="changeColor()">
-        <div id="photo">
-          <img
-            src="bartoszk.jpg"
-            alt="ja!!!!"
-            style="
-              height: 250px;
-              width: 200px;
-              border-bottom: black 10px solid;
-              border-right: black 10px solid;
-            "
-          />
+      <div id="partyball"></div>
+      <div id="partytime"></div>
+      <div id="top">
+        <div id="photo" onclick="changeColor()">
+          <img src="bartoszk.jpg"alt="ja!!!!"style="height: 250px; width: 200px;border-bottom: black 10px solid;border-right: black 10px solid;"/>
         </div>
         <div id="name">
           <h1>BARTOSZ KAROL MOLENDOWSKI</h1>
@@ -60,6 +53,9 @@
                 >https://github.com/ManiaQwy</a
               >
             </p>
+          </div>
+          <div id="filler">
+            <p onclick="discoParty()" style="cursor: pointer ;text-shadow: 3px 3px 3px black; color:white;"><i><span style="color: red;">F</span><span style="color: cyan;">R</span><span style="color: yellow;">E</span><span style="color: pink;">A<span><span style="color: blue;">K</span><span style="color: violet;">Y</span></i> button</p>
           </div>
         </div>
         <div id="info">

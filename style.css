@@ -2,6 +2,7 @@ body{
     background-color: gray;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 a{
     color: black;
@@ -79,4 +80,64 @@ p, a{
     margin-right: auto;
     margin-top: 10px;
     border-bottom: black 3px solid;
+}
+#discoball{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 50%; /* To make it round */
+}
+#discolight{
+    width: 20000px;
+    height: 100vh;
+    position: absolute;
+    width: 0; 
+    opacity: 0.3;
+    height: 0; 
+    border-left: 200vh solid transparent;
+    border-right: 200vh solid transparent;
+    border-bottom: 70vw solid black;
+    pointer-events: none;
+    margin-top: 50px;
+    transform-origin: 50% 0%;
+    animation:swing  3s;
+    animation-iteration-count: infinite;
+    background-color: aqua;
+    z-index: 1;
+
+}
+
+#partytime{
+    display: flex;
+    justify-content: center;
+}
+
+#partyball{
+    width: 945px;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(-20deg);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+    }
+
+    75% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-20deg);
+    }
 }
