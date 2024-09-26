@@ -87,7 +87,9 @@ p, a{
     height: 200px;
     z-index: 1;
     pointer-events: none;
-    border-radius: 50%; /* To make it round */
+    border-radius: 50%;
+    animation: pull 3s;
+
 }
 #discolight{
     width: 20000px;
@@ -102,8 +104,7 @@ p, a{
     pointer-events: none;
     margin-top: 50px;
     transform-origin: 50% 0%;
-    animation:swing  3s;
-    animation-iteration-count: infinite;
+    animation:swing  3s infinite, pull 3s;
     background-color: aqua;
     z-index: 1;
 
@@ -118,6 +119,15 @@ p, a{
     width: 945px;
     display: flex;
     justify-content: center;
+}
+
+@keyframes pull{
+    0%{
+        top: -215px;
+    }
+    100%{
+        top:0px;
+    }
 }
 
 @keyframes swing {
