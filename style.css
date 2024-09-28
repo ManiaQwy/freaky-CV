@@ -98,9 +98,9 @@ p, a{
     width: 0; 
     opacity: 0.3;
     height: 0; 
-    border-left: 200vh solid transparent;
-    border-right: 200vh solid transparent;
-    border-bottom: 2000px solid black;
+    border-left: 300vh solid transparent;
+    border-right: 300vh solid transparent;
+    border-bottom: 4500px solid black;
     pointer-events: none;
     margin-top: 50px;
     transform-origin: 50% 0%;

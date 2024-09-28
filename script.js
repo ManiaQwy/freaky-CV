@@ -22,8 +22,8 @@ function changeColor() {
     pliki.style.backgroundColor = colors2[rand];    
 }
 let onoff = 0;
-let audio = new Audio("spotifydown.com - Bla Bla Bla.mp3"); // Audio defined globally
-let colorInterval; // Variable to store the interval for color change
+let audio = new Audio("spotifydown.com - Bla Bla Bla.mp3"); 
+let colorInterval; 
 
 function discoParty() {
     let party = document.getElementById("partytime");
@@ -50,7 +50,7 @@ function discoParty() {
 
 function startColorChange() {
     const discolight = document.getElementById("discolight");
-    const colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan"]; // Array of colors
+    const colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan"]; 
     colorInterval = setInterval(() => {
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
         const randomColor2 = colors[Math.floor(Math.random() * colors.length)];
